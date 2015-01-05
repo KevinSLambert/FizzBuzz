@@ -17,7 +17,47 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    for ( int fizzBuzzNum = 0; fizzBuzzNum < 100; fizzBuzzNum++){
+        if (isBuzzed(fizzBuzzNum) == TRUE && isFizzed(fizzBuzzNum) == FALSE){
+            NSLog(@"%d , Buzz", fizzBuzzNum);
+        }
+        else if (isFizzed(fizzBuzzNum) == TRUE && isBuzzed(fizzBuzzNum) == FALSE){
+            NSLog(@"%d , Fizz", fizzBuzzNum);
+        }
+        else if (isFizzed(fizzBuzzNum) == TRUE && isBuzzed(fizzBuzzNum) == TRUE){
+            NSLog(@"%d , FizzBuzz", fizzBuzzNum);
+        }
+        else {
+            NSLog(@"%d",fizzBuzzNum);
+        }
+    }
+    
     return YES;
+}
+bool isBuzzed(int i){
+    //is a multiple of 3)
+    if (i is a multiple of "3") {
+        return TRUE;
+    }
+    else if (i has a "3"){
+        return TRUE;
+}
+    else {
+        return FALSE;
+}
+}
+
+bool isFizzed(int x){
+    if (x is a multiple of "5") {
+        return TRUE;
+    }
+    else if (x has a "5"){
+        return TRUE;
+    }
+    else {
+        return FALSE;
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
