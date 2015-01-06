@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+static int n = 0;
+
 @interface AppDelegate ()
 
 @end
@@ -37,22 +39,26 @@
 }
 bool isBuzzed(int i){
     //is a multiple of 3)
-    if (i is a multiple of "3") {
+    if ((i % 3) == 0) {
         return TRUE;
     }
-    else if (i has a "3"){
-        return TRUE;
-}
+    while (i > 0) {
+        n = i%10;
+        i = i/10;
+        if (n == 5) {
+            return TRUE;
+        }
+    }
     else {
         return FALSE;
 }
 }
 
 bool isFizzed(int x){
-    if (x is a multiple of "5") {
+    if ((x % 5) == 0) {
         return TRUE;
     }
-    else if (x has a "5"){
+    else if (if 'x' has a 5 in it){
         return TRUE;
     }
     else {
